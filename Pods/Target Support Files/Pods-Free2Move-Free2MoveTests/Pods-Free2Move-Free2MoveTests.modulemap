@@ -1,0 +1,6 @@
+framework module Pods_Free2Move_Free2MoveTests {
+  umbrella header "Pods-Free2Move-Free2MoveTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

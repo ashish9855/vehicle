@@ -8,8 +8,7 @@ target 'Free2Move' do
   # Pods for Free2Move
 
   target 'Free2MoveTests' do
-    inherit! :search_paths
-    # Pods for testing
+    pod 'Alamofire'
   end
 
 end
