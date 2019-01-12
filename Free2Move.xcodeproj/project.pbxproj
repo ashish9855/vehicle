@@ -14,7 +14,6 @@
 		5FA4AC0C21E8D06E00380562 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FA4AC0B21E8D06E00380562 /* Assets.xcassets */; };
 		5FA4AC0F21E8D06E00380562 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FA4AC0D21E8D06E00380562 /* LaunchScreen.storyboard */; };
 		5FA4AC1A21E8D06E00380562 /* Free2MoveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4AC1921E8D06E00380562 /* Free2MoveTests.swift */; };
-		9302EE8E885927312647ADC8 /* Pods_Free2Move_Free2MoveTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7FED276D42E0C505A5CBF2 /* Pods_Free2Move_Free2MoveTests.framework */; };
 		9A153F9B5C3C1FF56899A933 /* Pods_Free2Move.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C779D258803427C9F93941 /* Pods_Free2Move.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,10 +41,8 @@
 		5FA4AC1921E8D06E00380562 /* Free2MoveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Free2MoveTests.swift; sourceTree = "<group>"; };
 		5FA4AC1B21E8D06E00380562 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		881EB15AC54470C163F4344A /* Pods-Free2Move.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Free2Move.release.xcconfig"; path = "Pods/Target Support Files/Pods-Free2Move/Pods-Free2Move.release.xcconfig"; sourceTree = "<group>"; };
-		8A078E8355BFC8390B05D675 /* Pods-Free2Move-Free2MoveTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Free2Move-Free2MoveTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Free2Move-Free2MoveTests/Pods-Free2Move-Free2MoveTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B0BA2957036D6F86DABD36E3 /* Pods-Free2Move.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Free2Move.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Free2Move/Pods-Free2Move.debug.xcconfig"; sourceTree = "<group>"; };
 		D6C779D258803427C9F93941 /* Pods_Free2Move.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Free2Move.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF52318F76C639AB726D1F06 /* Pods-Free2Move-Free2MoveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Free2Move-Free2MoveTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Free2Move-Free2MoveTests/Pods-Free2Move-Free2MoveTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +58,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9302EE8E885927312647ADC8 /* Pods_Free2Move_Free2MoveTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,8 +137,6 @@
 			children = (
 				B0BA2957036D6F86DABD36E3 /* Pods-Free2Move.debug.xcconfig */,
 				881EB15AC54470C163F4344A /* Pods-Free2Move.release.xcconfig */,
-				8A078E8355BFC8390B05D675 /* Pods-Free2Move-Free2MoveTests.debug.xcconfig */,
-				DF52318F76C639AB726D1F06 /* Pods-Free2Move-Free2MoveTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -158,6 +152,7 @@
 				5FA4ABFD21E8D06D00380562 /* Sources */,
 				5FA4ABFE21E8D06D00380562 /* Frameworks */,
 				5FA4ABFF21E8D06D00380562 /* Resources */,
+				9DC1A1C3E303AE0EF91D1D50 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -172,11 +167,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5FA4AC2121E8D06E00380562 /* Build configuration list for PBXNativeTarget "Free2MoveTests" */;
 			buildPhases = (
-				B8C654C5954E37FFEDB97D23 /* [CP] Check Pods Manifest.lock */,
 				5FA4AC1121E8D06E00380562 /* Sources */,
 				5FA4AC1221E8D06E00380562 /* Frameworks */,
 				5FA4AC1321E8D06E00380562 /* Resources */,
-				6025DF24868B30D0F7D9E04E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -247,7 +240,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6025DF24868B30D0F7D9E04E /* [CP] Embed Pods Frameworks */ = {
+		9DC1A1C3E303AE0EF91D1D50 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -255,7 +248,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Free2Move-Free2MoveTests/Pods-Free2Move-Free2MoveTests-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-Free2Move/Pods-Free2Move-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
@@ -268,29 +261,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Free2Move-Free2MoveTests/Pods-Free2Move-Free2MoveTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B8C654C5954E37FFEDB97D23 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Free2Move-Free2MoveTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Free2Move/Pods-Free2Move-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D9C880183385E8E5076AC95C /* [CP] Check Pods Manifest.lock */ = {
@@ -520,7 +491,6 @@
 		};
 		5FA4AC2221E8D06E00380562 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A078E8355BFC8390B05D675 /* Pods-Free2Move-Free2MoveTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -541,7 +511,6 @@
 		};
 		5FA4AC2321E8D06E00380562 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF52318F76C639AB726D1F06 /* Pods-Free2Move-Free2MoveTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
