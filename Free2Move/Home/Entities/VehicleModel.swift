@@ -10,13 +10,22 @@ import Foundation
 import SwiftyJSON
 
 struct Vehicle {
+    
+    enum EngineType: String {
+        case petrol
+        case hydrogen
+        case diesel
+        case electric
+        case generic = ""
+    }
+    
     let provider: String
     let manufacturer: String
     let model: String
     let sign: String
     let vin: String
     let fuelState: Int
-    let engineType: String
+    let engineType: EngineType
     let automatic: Bool
     let color: String
     let position: Position
@@ -28,7 +37,7 @@ struct Vehicle {
         sign = json["sign"].stringValue
         vin = json["vin"].stringValue
         fuelState = json["fuel_state"].intValue
-        engineType = json["engine_type"].stringValue
+        engineType = EngineType(rawValue: json["engine_type"].stringValue) ?? .generic
         automatic = json["automatic"].boolValue
         color = json["color"].stringValue
         position = Position(json["position"])
