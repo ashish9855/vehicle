@@ -120,6 +120,13 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		5F05886D21EA6C28004D15DD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		5FA4ABF821E8D06D00380562 = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +163,7 @@
 		5FA4AC1821E8D06E00380562 /* Free2MoveTests */ = {
 			isa = PBXGroup;
 			children = (
+				5F05886D21EA6C28004D15DD /* Utils */,
 				5F05886921EA6605004D15DD /* Models */,
 				5F05886521EA4392004D15DD /* RawJsonFiles */,
 				5FA4AC1B21E8D06E00380562 /* Info.plist */,
