@@ -8,3 +8,7 @@ target 'Free2Move' do
   pod 'SwiftyJSON'
 
 end
+
+target 'Free2MoveTests' do
+     pod 'SwiftyJSON'
+end
