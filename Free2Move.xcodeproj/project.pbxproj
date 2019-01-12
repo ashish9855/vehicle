@@ -73,8 +73,8 @@
 		5F05885B21EA2044004D15DD /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				5F05886821EA6410004D15DD /* Controllers */,
 				5F05885C21EA26DB004D15DD /* Entities */,
-				5FA4AC0621E8D06D00380562 /* HomeViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -95,6 +95,14 @@
 				5F05886621EA43EF004D15DD /* Vehicles.json */,
 			);
 			path = RawJsonFiles;
+			sourceTree = "<group>";
+		};
+		5F05886821EA6410004D15DD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5FA4AC0621E8D06D00380562 /* HomeViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		5FA4ABF821E8D06D00380562 = {
