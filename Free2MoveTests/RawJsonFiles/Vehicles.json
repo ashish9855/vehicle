@@ -1,0 +1,43 @@
+{
+    "vehicles": [
+        {
+            "provider": "vehicle4go",
+            "manufacturer": "Mercedes-Benz",
+            "model": "Mercedes-Benz B-Klasse",
+            "sign": "i5q9KV",
+            "vin": "cRgbshhbfSwc",
+            "fuel_state": 72,
+            "engine_type": "electric",
+            "automatic": true,
+            "color": "laurus_grey",
+            "position": {
+                "lat": 52.30758365322001,
+                "lng": 13.360824981446907
+            },
+            "price_info": {
+                "driving": {
+                    "formatted": "0,18Â â‚¬ / min"
+                }
+            }
+        },
+        {
+            "provider": "vehicle4go",
+            "manufacturer": "Mercedes-Benz",
+            "model": "Mercedes-Benz CLA",
+            "sign": "cxagzs",
+            "vin": "inibdftTexiR",
+            "fuel_state": 45,
+            "engine_type": "electric",
+            "automatic": false,
+            "color": "mineral_white",
+            "position": {
+                "lat": 52.22528648085717,
+                "lng": 13.227073285308466
+            },
+            "price_info": {
+                "driving": {
+                    "formatted": "0,10Â â‚¬ / min"
+                }
+            }
+        }]
+}

@@ -10,6 +10,7 @@
 		5F05885E21EA271F004D15DD /* VehicleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F05885D21EA271F004D15DD /* VehicleModel.swift */; };
 		5F05886221EA2D6D004D15DD /* VehicleModel.Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F05886121EA2D6D004D15DD /* VehicleModel.Position.swift */; };
 		5F05886421EA4150004D15DD /* VehiclesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F05886321EA4150004D15DD /* VehiclesModel.swift */; };
+		5F05886721EA43EF004D15DD /* Vehicles.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F05886621EA43EF004D15DD /* Vehicles.json */; };
 		5FA4AC0521E8D06D00380562 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4AC0421E8D06D00380562 /* AppDelegate.swift */; };
 		5FA4AC0721E8D06D00380562 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4AC0621E8D06D00380562 /* HomeViewController.swift */; };
 		5FA4AC0A21E8D06D00380562 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FA4AC0821E8D06D00380562 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 		5F05885D21EA271F004D15DD /* VehicleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleModel.swift; sourceTree = "<group>"; };
 		5F05886121EA2D6D004D15DD /* VehicleModel.Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleModel.Position.swift; sourceTree = "<group>"; };
 		5F05886321EA4150004D15DD /* VehiclesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesModel.swift; sourceTree = "<group>"; };
+		5F05886621EA43EF004D15DD /* Vehicles.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Vehicles.json; sourceTree = "<group>"; };
 		5FA4AC0121E8D06D00380562 /* Free2Move.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Free2Move.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FA4AC0421E8D06D00380562 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FA4AC0621E8D06D00380562 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +89,14 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
+		5F05886521EA4392004D15DD /* RawJsonFiles */ = {
+			isa = PBXGroup;
+			children = (
+				5F05886621EA43EF004D15DD /* Vehicles.json */,
+			);
+			path = RawJsonFiles;
+			sourceTree = "<group>";
+		};
 		5FA4ABF821E8D06D00380562 = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +133,7 @@
 		5FA4AC1821E8D06E00380562 /* Free2MoveTests */ = {
 			isa = PBXGroup;
 			children = (
+				5F05886521EA4392004D15DD /* RawJsonFiles */,
 				5FA4AC1921E8D06E00380562 /* Free2MoveTests.swift */,
 				5FA4AC1B21E8D06E00380562 /* Info.plist */,
 			);
@@ -240,6 +251,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F05886721EA43EF004D15DD /* Vehicles.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
