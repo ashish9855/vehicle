@@ -9,6 +9,7 @@ target 'Free2Move' do
 
   target 'Free2MoveTests' do
     pod 'Alamofire'
+    pod 'SwiftyJSON'
   end
 
 end
