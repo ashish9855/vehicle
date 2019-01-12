@@ -7,15 +7,24 @@
 //
 
 import XCTest
+import SwiftyJSON
+@testable import Free2Move
 
 class VehiclesModelTest: XCTestCase {
 
+    var vehicles: Vehicles?
+    
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        super.setUp()
+        vehicles = Vehicles(JSON(fileName: "Vehicles.json"))
     }
 
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
+    }
+    
+    func testItemsCount_WhenDataParsed() {
+        XCTAssertEqual(vehicles?.vehicles.count, 2)
     }
 
     func testExample() {
