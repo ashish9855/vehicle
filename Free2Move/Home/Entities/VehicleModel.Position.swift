@@ -7,3 +7,17 @@
 //
 
 import Foundation
+import SwiftyJSON
+
+extension Vehicle {
+    
+    struct Position {
+        
+        let latitutde: String
+        let longitude: String
+        init(_ json: JSON) {
+            latitutde = json["lat"].stringValue
+            longitude = json["lng"].stringValue
+        }
+    }
+}
