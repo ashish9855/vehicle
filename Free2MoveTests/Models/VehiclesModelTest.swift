@@ -1,15 +1,14 @@
 //
-//  Free2MoveTests.swift
+//  VehiclesModelTest.swift
 //  Free2MoveTests
 //
-//  Created by Ashish Maheshwari on 1/11/19.
+//  Created by Ashish Maheshwari on 1/12/19.
 //  Copyright © 2019 Ashish Maheshwari. All rights reserved.
 //
 
 import XCTest
-@testable import Free2Move
 
-class Free2MoveTests: XCTestCase {
+class VehiclesModelTest: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
