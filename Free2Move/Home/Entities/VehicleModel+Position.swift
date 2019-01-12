@@ -12,13 +12,12 @@ import SwiftyJSON
 extension Vehicle {
     
     struct Position {
-        
-        let latitutde: String
-        let longitude: String
-        
+        let latitutde: Double
+        let longitude: Double
+
         init(_ json: JSON) {
-            latitutde = json["lat"].stringValue
-            longitude = json["lng"].stringValue
+            latitutde = json["lat"].doubleValue
+            longitude = json["lng"].doubleValue
         }
     }
 }
