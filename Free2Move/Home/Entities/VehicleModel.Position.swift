@@ -1,5 +1,5 @@
 //
-//  VehiclePositionModel.swift
+//  VehicleModel.Position.swift
 //  Free2Move
 //
 //  Created by Ashish Maheshwari on 1/12/19.
@@ -7,4 +7,3 @@
 //
 
 import Foundation
-import SwiftyJSON
