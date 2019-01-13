@@ -8,6 +8,7 @@
 
 import Foundation
 import SwiftyJSON
+import Alamofire
 
 struct Vehicles {
     let vehicles: [Vehicle]
@@ -16,3 +17,15 @@ struct Vehicles {
         vehicles = json["vehicles"].arrayValue.map({ Vehicle($0) })
     }
 }
+
+
+extension Vehicles {
+    
+    static func resource(url: String, parser: @escaping (_ parser: ResponseParser) -> Void ) -> Resource {
+        return Resource(url: url,
+                        path: "/v1",
+                        method: HTTPMethod.get,
+                        parser: parser)
+    }
+}
+
