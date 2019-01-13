@@ -21,18 +21,18 @@
             }
         },
         {
-            "provider": "vehicle4go",
-            "manufacturer": "Mercedes-Benz",
-            "model": "Mercedes-Benz CLA",
-            "sign": "cxagzs",
-            "vin": "inibdftTexiR",
-            "fuel_state": 45,
-            "engine_type": "electric",
-            "automatic": false,
-            "color": "mineral_white",
+            "provider": null,
+            "manufacturer": null,
+            "model": null,
+            "sign": null,
+            "vin": null,
+            "fuel_state": null,
+            "engine_type": null,
+            "automatic": null,
+            "color": null,
             "position": {
-                "lat": 52.22528648085717,
-                "lng": 13.227073285308466
+                "lat": null,
+                "lng": null
             },
             "price_info": {
                 "driving": {
