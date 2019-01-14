@@ -11,13 +11,10 @@ import Alamofire
 
 class RequestExecutor {
     
-    let resource: Resource
-
-    init (_ resource: Resource) {
-        self.resource = resource
-    }
+    var resource: Resource!
     
-    func execute() {
+    func execute(_ resource: Resource) {
+        self.resource = resource
         guard let url = resource.url else { return }
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = resource.method.rawValue

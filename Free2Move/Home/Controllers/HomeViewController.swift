@@ -10,10 +10,15 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    let businessLayer = BusinessLayer()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+        businessLayer.getVehicles(success: { (vehicles) in
+            print(vehicles)
+        }, failure: { (error) in
+            print(error)
+        })
     }
 }
 
