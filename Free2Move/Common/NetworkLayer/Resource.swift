@@ -11,14 +11,17 @@ import Alamofire
 
 struct Resource {
     
+    typealias Parser = (_ parser: ResponseParser) -> Void
+    var parser: Parser
+    let url: URL?
+    let method: HTTPMethod
+    let headers: HTTPHeaders
+
     init(url: String, path: String = "", method: HTTPMethod, parameters: Parameters? = nil, headers: HTTPHeaders = [:], parser: @escaping (_ parser: ResponseParser) -> Void) {
-        
-        guard let url = Resource.makeURL(url, path) else { return }
-        var urlRequest = URLRequest(url: url)
-        urlRequest.httpMethod = method.rawValue
-        urlRequest.allHTTPHeaderFields = headers
-        let executer = RequestExecutor(urlRequest)
-        executer.execute(with: parser)
+        self.url = Resource.makeURL(url, path)
+        self.parser = parser
+        self.method = method
+        self.headers = headers
     }
     
     private static func makeURL(_ url: String, _ path: String) -> URL? {

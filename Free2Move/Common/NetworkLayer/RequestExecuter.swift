@@ -11,15 +11,20 @@ import Alamofire
 
 class RequestExecutor {
     
-    let request: URLRequest
+    let resource: Resource
 
-    init (_ request: URLRequest) {
-        self.request = request
+    init (_ resource: Resource) {
+        self.resource = resource
     }
     
-    func execute(with completionHandler:  @escaping (_ parser: ResponseParser) -> Void) {
-        Alamofire.request(request).responseData { data in
-            completionHandler(self.parser(data))
+    func execute() {
+        guard let url = resource.url else { return }
+        var urlRequest = URLRequest(url: url)
+        urlRequest.httpMethod = resource.method.rawValue
+        urlRequest.allHTTPHeaderFields = resource.headers
+        Alamofire.request(urlRequest).responseData { [weak self] data in
+            guard let `self` = self else { return }
+            self.resource.parser(self.parser(data))
         }
     }
     
