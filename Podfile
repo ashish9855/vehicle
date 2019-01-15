@@ -11,4 +11,5 @@ end
 
 target 'Free2MoveTests' do
      pod 'SwiftyJSON'
+     pod 'Mockingjay' 
 end
