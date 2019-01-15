@@ -30,6 +30,9 @@
                             <constraint firstItem="gqI-nZ-XsH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uAO-i1-0GW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outlet property="mapView" destination="gqI-nZ-XsH" id="uJ9-Y7-gnW"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
