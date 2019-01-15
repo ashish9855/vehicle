@@ -21,6 +21,8 @@
 		5F05887E21EBBDA2004D15DD /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F05887D21EBBDA2004D15DD /* APIError.swift */; };
 		5F05888021EBD3FC004D15DD /* HttpStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F05887F21EBD3FC004D15DD /* HttpStatusCode.swift */; };
 		5F05888521EBEEFF004D15DD /* BusinessLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F05888421EBEEFF004D15DD /* BusinessLayer.swift */; };
+		5F0588D521EE55B6004D15DD /* RootViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0588D421EE55B6004D15DD /* RootViewProtocol.swift */; };
+		5F0588D721EE567B004D15DD /* HomeViewControllerRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0588D621EE567B004D15DD /* HomeViewControllerRootView.swift */; };
 		5FA4AC0521E8D06D00380562 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4AC0421E8D06D00380562 /* AppDelegate.swift */; };
 		5FA4AC0721E8D06D00380562 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4AC0621E8D06D00380562 /* HomeViewController.swift */; };
 		5FA4AC0A21E8D06D00380562 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FA4AC0821E8D06D00380562 /* Main.storyboard */; };
@@ -57,6 +59,8 @@
 		5F05887D21EBBDA2004D15DD /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		5F05887F21EBD3FC004D15DD /* HttpStatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpStatusCode.swift; sourceTree = "<group>"; };
 		5F05888421EBEEFF004D15DD /* BusinessLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessLayer.swift; sourceTree = "<group>"; };
+		5F0588D421EE55B6004D15DD /* RootViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewProtocol.swift; sourceTree = "<group>"; };
+		5F0588D621EE567B004D15DD /* HomeViewControllerRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerRootView.swift; sourceTree = "<group>"; };
 		5FA4AC0121E8D06D00380562 /* Free2Move.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Free2Move.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FA4AC0421E8D06D00380562 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FA4AC0621E8D06D00380562 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				5FA4AC0621E8D06D00380562 /* HomeViewController.swift */,
+				5F0588D621EE567B004D15DD /* HomeViewControllerRootView.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -147,6 +152,7 @@
 		5F05887021EA6E02004D15DD /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				5F0588D321EE55A6004D15DD /* Protocols */,
 				5F05887621EB24F7004D15DD /* NetworkLayer */,
 				5F05887121EA6E09004D15DD /* Helpers */,
 			);
@@ -179,6 +185,14 @@
 				5F05888421EBEEFF004D15DD /* BusinessLayer.swift */,
 			);
 			path = BusinessLayers;
+			sourceTree = "<group>";
+		};
+		5F0588D321EE55A6004D15DD /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				5F0588D421EE55B6004D15DD /* RootViewProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		5FA4ABF821E8D06D00380562 = {
@@ -425,12 +439,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F0588D721EE567B004D15DD /* HomeViewControllerRootView.swift in Sources */,
 				5FA4AC0721E8D06D00380562 /* HomeViewController.swift in Sources */,
 				5F05885E21EA271F004D15DD /* VehicleModel.swift in Sources */,
 				5F05887C21EB3CEB004D15DD /* RequestExecuter.swift in Sources */,
 				5FA4AC0521E8D06D00380562 /* AppDelegate.swift in Sources */,
 				5F05888021EBD3FC004D15DD /* HttpStatusCode.swift in Sources */,
 				5F05887821EB27B0004D15DD /* Resource.swift in Sources */,
+				5F0588D521EE55B6004D15DD /* RootViewProtocol.swift in Sources */,
 				5F05886221EA2D6D004D15DD /* VehicleModel+Position.swift in Sources */,
 				5F05888521EBEEFF004D15DD /* BusinessLayer.swift in Sources */,
 				5F05886421EA4150004D15DD /* VehiclesModel.swift in Sources */,
