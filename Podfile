@@ -6,7 +6,7 @@ target 'Free2Move' do
   use_frameworks!
   pod 'Alamofire'
   pod 'SwiftyJSON'
-
+  pod 'MBProgressHUD'
 end
 
 target 'Free2MoveTests' do
