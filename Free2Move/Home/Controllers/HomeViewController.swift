@@ -8,12 +8,17 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, RootViewProtocol {
 
+    typealias TypeRootView = HomeViewControllerRootView
+    
     let businessLayer = BusinessLayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
         businessLayer.getVehicles(success: { (vehicles) in
             print(vehicles)
         }, failure: { (error) in
