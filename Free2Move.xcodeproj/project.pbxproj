@@ -25,6 +25,8 @@
 		5F0588D721EE567B004D15DD /* HomeViewControllerRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F0588D621EE567B004D15DD /* HomeViewControllerRootView.swift */; };
 		5F6777E821EE784300CA4274 /* VehicleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6777E721EE784300CA4274 /* VehicleView.swift */; };
 		5F6777EA21EE785000CA4274 /* VehicleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F6777E921EE785000CA4274 /* VehicleView.xib */; };
+		5F6777EF21EE7B4B00CA4274 /* VehicleInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6777ED21EE7B4B00CA4274 /* VehicleInfoCell.swift */; };
+		5F6777F021EE7B4B00CA4274 /* VehicleInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F6777EE21EE7B4B00CA4274 /* VehicleInfoCell.xib */; };
 		5FA4AC0521E8D06D00380562 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4AC0421E8D06D00380562 /* AppDelegate.swift */; };
 		5FA4AC0721E8D06D00380562 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4AC0621E8D06D00380562 /* HomeViewController.swift */; };
 		5FA4AC0A21E8D06D00380562 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FA4AC0821E8D06D00380562 /* Main.storyboard */; };
@@ -65,6 +67,8 @@
 		5F0588D621EE567B004D15DD /* HomeViewControllerRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerRootView.swift; sourceTree = "<group>"; };
 		5F6777E721EE784300CA4274 /* VehicleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleView.swift; sourceTree = "<group>"; };
 		5F6777E921EE785000CA4274 /* VehicleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VehicleView.xib; sourceTree = "<group>"; };
+		5F6777ED21EE7B4B00CA4274 /* VehicleInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleInfoCell.swift; sourceTree = "<group>"; };
+		5F6777EE21EE7B4B00CA4274 /* VehicleInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VehicleInfoCell.xib; sourceTree = "<group>"; };
 		5FA4AC0121E8D06D00380562 /* Free2Move.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Free2Move.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FA4AC0421E8D06D00380562 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FA4AC0621E8D06D00380562 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -203,10 +207,28 @@
 		5F0588D821EE6040004D15DD /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				5F6777EC21EE7B0B00CA4274 /* VehicleInfoCell */,
+				5F6777EB21EE7B0100CA4274 /* VehicleView */,
 				5F6777E721EE784300CA4274 /* VehicleView.swift */,
 				5F6777E921EE785000CA4274 /* VehicleView.xib */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		5F6777EB21EE7B0100CA4274 /* VehicleView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VehicleView;
+			sourceTree = "<group>";
+		};
+		5F6777EC21EE7B0B00CA4274 /* VehicleInfoCell */ = {
+			isa = PBXGroup;
+			children = (
+				5F6777ED21EE7B4B00CA4274 /* VehicleInfoCell.swift */,
+				5F6777EE21EE7B4B00CA4274 /* VehicleInfoCell.xib */,
+			);
+			path = VehicleInfoCell;
 			sourceTree = "<group>";
 		};
 		5FA4ABF821E8D06D00380562 = {
@@ -365,6 +387,7 @@
 				5FA4AC0C21E8D06E00380562 /* Assets.xcassets in Resources */,
 				5FA4AC0A21E8D06D00380562 /* Main.storyboard in Resources */,
 				5F6777EA21EE785000CA4274 /* VehicleView.xib in Resources */,
+				5F6777F021EE7B4B00CA4274 /* VehicleInfoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +489,7 @@
 				5F05887821EB27B0004D15DD /* Resource.swift in Sources */,
 				5F0588D521EE55B6004D15DD /* RootViewProtocol.swift in Sources */,
 				5F05886221EA2D6D004D15DD /* VehicleModel+Position.swift in Sources */,
+				5F6777EF21EE7B4B00CA4274 /* VehicleInfoCell.swift in Sources */,
 				5F05888521EBEEFF004D15DD /* BusinessLayer.swift in Sources */,
 				5F05886421EA4150004D15DD /* VehiclesModel.swift in Sources */,
 				5F05887A21EB2A16004D15DD /* ResponseParser.swift in Sources */,
