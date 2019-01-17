@@ -27,6 +27,9 @@
 		5F6777EA21EE785000CA4274 /* VehicleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F6777E921EE785000CA4274 /* VehicleView.xib */; };
 		5F6777EF21EE7B4B00CA4274 /* VehicleInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6777ED21EE7B4B00CA4274 /* VehicleInfoCell.swift */; };
 		5F6777F021EE7B4B00CA4274 /* VehicleInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F6777EE21EE7B4B00CA4274 /* VehicleInfoCell.xib */; };
+		5F6777F321F1308400CA4274 /* HomeViewControllerRootViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F6777F221F1308400CA4274 /* HomeViewControllerRootViewTest.swift */; };
+		5F6777F521F130FD00CA4274 /* VehiclesNew.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F6777F421F130FD00CA4274 /* VehiclesNew.json */; };
+		5F6777F721F1314800CA4274 /* VehiclesOld.json in Resources */ = {isa = PBXBuildFile; fileRef = 5F6777F621F1314800CA4274 /* VehiclesOld.json */; };
 		5FA4AC0521E8D06D00380562 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4AC0421E8D06D00380562 /* AppDelegate.swift */; };
 		5FA4AC0721E8D06D00380562 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA4AC0621E8D06D00380562 /* HomeViewController.swift */; };
 		5FA4AC0A21E8D06D00380562 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FA4AC0821E8D06D00380562 /* Main.storyboard */; };
@@ -69,6 +72,9 @@
 		5F6777E921EE785000CA4274 /* VehicleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VehicleView.xib; sourceTree = "<group>"; };
 		5F6777ED21EE7B4B00CA4274 /* VehicleInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleInfoCell.swift; sourceTree = "<group>"; };
 		5F6777EE21EE7B4B00CA4274 /* VehicleInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VehicleInfoCell.xib; sourceTree = "<group>"; };
+		5F6777F221F1308400CA4274 /* HomeViewControllerRootViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerRootViewTest.swift; sourceTree = "<group>"; };
+		5F6777F421F130FD00CA4274 /* VehiclesNew.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = VehiclesNew.json; sourceTree = "<group>"; };
+		5F6777F621F1314800CA4274 /* VehiclesOld.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = VehiclesOld.json; sourceTree = "<group>"; };
 		5FA4AC0121E8D06D00380562 /* Free2Move.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Free2Move.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FA4AC0421E8D06D00380562 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5FA4AC0621E8D06D00380562 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +133,8 @@
 		5F05886521EA4392004D15DD /* RawJsonFiles */ = {
 			isa = PBXGroup;
 			children = (
+				5F6777F621F1314800CA4274 /* VehiclesOld.json */,
+				5F6777F421F130FD00CA4274 /* VehiclesNew.json */,
 				5F05886621EA43EF004D15DD /* Vehicles.json */,
 			);
 			path = RawJsonFiles;
@@ -231,6 +239,14 @@
 			path = VehicleInfoCell;
 			sourceTree = "<group>";
 		};
+		5F6777F121F1305E00CA4274 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5F6777F221F1308400CA4274 /* HomeViewControllerRootViewTest.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		5FA4ABF821E8D06D00380562 = {
 			isa = PBXGroup;
 			children = (
@@ -269,6 +285,7 @@
 		5FA4AC1821E8D06E00380562 /* Free2MoveTests */ = {
 			isa = PBXGroup;
 			children = (
+				5F6777F121F1305E00CA4274 /* Controllers */,
 				5F05886D21EA6C28004D15DD /* Utils */,
 				5F05886921EA6605004D15DD /* Models */,
 				5F05886521EA4392004D15DD /* RawJsonFiles */,
@@ -395,7 +412,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F6777F721F1314800CA4274 /* VehiclesOld.json in Resources */,
 				5F05886721EA43EF004D15DD /* Vehicles.json in Resources */,
+				5F6777F521F130FD00CA4274 /* VehiclesNew.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +522,7 @@
 			files = (
 				5F05886C21EA6668004D15DD /* VehiclesModelTest.swift in Sources */,
 				5F05887521EA709B004D15DD /* SwiftyJSON+Helper.swift in Sources */,
+				5F6777F321F1308400CA4274 /* HomeViewControllerRootViewTest.swift in Sources */,
 				5F05886F21EA6C60004D15DD /* File.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

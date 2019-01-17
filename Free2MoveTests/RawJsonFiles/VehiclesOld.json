@@ -1,0 +1,64 @@
+{
+    "vehicles": [
+        {
+            "provider": "vehicle4go",
+            "manufacturer": "Mercedes-Benz",
+            "model": "Mercedes-Benz B-Klasse",
+            "sign": "i5q9KV",
+            "vin": "cRgbshhbfSwc1",
+            "fuel_state": 72,
+            "engine_type": "electric",
+            "automatic": true,
+            "color": "laurus_grey",
+            "position": {
+                "lat": 52.30758365322011,
+                "lng": 13.360824981446907
+            },
+            "price_info": {
+                "driving": {
+                    "formatted": "0,18Â â‚¬ / min"
+                }
+            }
+        },
+        {
+            "provider": "vehicle4go",
+            "manufacturer": "Mercedes-Benz",
+            "model": "Mercedes-Benz B-Klasse",
+            "sign": "i5q9KV",
+            "vin": "cRgbshhbfSwc2",
+            "fuel_state": 72,
+            "engine_type": "electric",
+            "automatic": true,
+            "color": "laurus_grey",
+            "position": {
+                "lat": 52.30758365322001,
+                "lng": 13.360824981442907
+            },
+            "price_info": {
+                "driving": {
+                    "formatted": "0,18Â â‚¬ / min"
+                }
+            }
+        },
+        {
+            "provider": "vehicle4go",
+            "manufacturer": "Mercedes-Benz",
+            "model": "Mercedes-Benz B-Klasse",
+            "sign": "i5q9KV",
+            "vin": "cRgbshhbfSwc3",
+            "fuel_state": 72,
+            "engine_type": "electric",
+            "automatic": true,
+            "color": "laurus_grey",
+            "position": {
+                "lat": 52.30758365322001,
+                "lng": 13.360824981416907
+            },
+            "price_info": {
+                "driving": {
+                    "formatted": "0,18Â â‚¬ / min"
+                }
+            }
+        },
+    ]
+}
