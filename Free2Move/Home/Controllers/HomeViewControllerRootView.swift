@@ -75,7 +75,7 @@ class HomeViewControllerRootView: UIView {
     }
     
     func commonVehicles(between old: [Vehicle], and new: [Vehicle]) -> [Vehicle] {
-        return new.filter { self.vehicles.contains($0) }
+        return new.filter { old.contains($0) }
     }
     
     func leftVehicles(in vehicles: [Vehicle], after common: [Vehicle]) -> [Vehicle] {
@@ -83,8 +83,8 @@ class HomeViewControllerRootView: UIView {
     }
     
     func getAnotations(in anotations:[MKPointAnnotation], of vehicles: [Vehicle]) -> [MKPointAnnotation] {
-        return annotations.filter { (anotation) -> Bool in
-            (vehicles.first(where: { $0.vin == anotation.title }) != nil)
+        return anotations.filter { (anotation) -> Bool in
+            return vehicles.contains(where: { $0.vin == anotation.title })
         }
     }
 
@@ -108,7 +108,7 @@ class HomeViewControllerRootView: UIView {
         }
     }
     
-    private func getAnnotation(vehicle: Vehicle) -> MKPointAnnotation {
+    func getAnnotation(vehicle: Vehicle) -> MKPointAnnotation {
         let annotation = MKPointAnnotation()
         let latitude = vehicle.position.latitutde
         let longitude = vehicle.position.longitude
