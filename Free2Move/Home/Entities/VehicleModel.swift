@@ -43,3 +43,9 @@ struct Vehicle {
         position = Position(json["position"])
     }
 }
+
+extension Vehicle: Equatable {
+    static func ==(lhs: Vehicle, rhs: Vehicle) -> Bool {
+        return lhs.vin == rhs.vin && lhs.position.latitutde == rhs.position.latitutde && lhs.position.longitude == rhs.position.longitude
+    }
+}

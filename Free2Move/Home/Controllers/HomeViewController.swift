@@ -18,17 +18,35 @@ class HomeViewController: UIViewController, RootViewProtocol {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.rootView.startLoading()
+        getVehicles()
+    }
+    
+    func getVehicles() {
         businessLayer.getVehicles(success: {[weak self] (vehicles) in
-            self?.rootView.stopLoading()
-            self?.rootView.vehicles = vehicles.vehicles
-            self?.rootView.convertCoordinatesToAnnotations(for: vehicles.vehicles)
-            self?.rootView.zoomMap()
-            self?.rootView.addAllAnotations()
-        }, failure: { (error) in
-            print(error)
+            guard let `self` = self else { return }
             self.rootView.stopLoading()
-
-        })
+            self.handleVehicles(vehicles.vehicles)
+            self.fireTimer()
+            }, failure: { (error) in
+                print(error)
+                self.rootView.stopLoading()
+                self.fireTimer()
+            })
+    }
+    
+    func fireTimer() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(3)) {
+            self.getVehicles()
+        }
+    }
+    
+    func handleVehicles(_ vehicles: [Vehicle]) {
+        let oldVehicles = self.rootView.vehicles
+        let oldAnotations = self.rootView.annotations
+        let (finalVehicles, finalAnotations) = self.rootView.handle(oldVehicles: oldVehicles, newVehicles: vehicles, oldAnotations: oldAnotations)
+        self.rootView.vehicles = finalVehicles
+        self.rootView.annotations = finalAnotations
+        self.rootView.zoomMap()
     }
 }
 
