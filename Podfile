@@ -7,6 +7,7 @@ target 'Free2Move' do
   pod 'Alamofire'
   pod 'SwiftyJSON'
   pod 'MBProgressHUD'
+  pod 'SnapKit'
 end
 
 target 'Free2MoveTests' do
