@@ -9,6 +9,7 @@
 import UIKit
 import MBProgressHUD
 import MapKit
+import SnapKit
 
 class HomeViewControllerRootView: UIView {
     
@@ -21,7 +22,7 @@ class HomeViewControllerRootView: UIView {
 
     func addDetailView(view: UIView) {
         detailView.addSubview(view)
-        
+        view.snp.makeConstraints { $0.edges.equalTo(0) }
     }
     
     func handle(oldVehicles: [Vehicle], newVehicles: [Vehicle], oldAnotations:[MKPointAnnotation]) -> (vehicles: [Vehicle], anotations: [MKPointAnnotation]) {

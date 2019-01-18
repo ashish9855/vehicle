@@ -13,14 +13,23 @@ class VehicleView: UIView {
     @IBOutlet weak var modelName: UILabel!
     @IBOutlet weak var identificationNumber: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var heightConstraintaForCollectionView: NSLayoutConstraint!
     
-    private let cellWidth = CGFloat(self.frame.size.width / 2)
     private let cellHeight = CGFloat(50)
     private let identifier = "infoCell"
-    var items: [String] = []
+    var presentationModel: VehicleViewPresentationModel!
     
-    func setup() {
+    func setup(presentationModel: VehicleViewPresentationModel) {
+        self.presentationModel = presentationModel
+        let rows = getTotalRows(items: presentationModel.formData())
+        heightConstraintaForCollectionView.constant = CGFloat(rows * 50)
         self.collectionView.register(UINib(nibName: "VehicleInfoCell", bundle: nil), forCellWithReuseIdentifier: identifier)
+    }
+    
+    func getTotalRows(items: [VehicleViewPresentationModel.Item]) -> Int {
+        let numberOfRows = items.count / 2
+        let oneMoreRow = items.count % 2 == 0 ? 0 : 1
+        return oneMoreRow + numberOfRows
     }
 }
 
@@ -31,7 +40,7 @@ extension VehicleView: UICollectionViewDelegateFlowLayout, UICollectionViewDataS
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return items.count
+        return presentationModel.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -40,6 +49,7 @@ extension VehicleView: UICollectionViewDelegateFlowLayout, UICollectionViewDataS
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let cellWidth = CGFloat(self.frame.size.width / 2)
         return CGSize(width: cellWidth, height: cellHeight)
     }
 }

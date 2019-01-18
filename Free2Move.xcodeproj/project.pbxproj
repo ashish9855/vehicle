@@ -36,6 +36,7 @@
 		5FA4AC0C21E8D06E00380562 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FA4AC0B21E8D06E00380562 /* Assets.xcassets */; };
 		5FA4AC0F21E8D06E00380562 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FA4AC0D21E8D06E00380562 /* LaunchScreen.storyboard */; };
 		5FF06C5921F20132006DD840 /* UIView+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF06C5821F20132006DD840 /* UIView+Helper.swift */; };
+		5FF06C5F21F20C90006DD840 /* VehicleViewPresentationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF06C5E21F20C90006DD840 /* VehicleViewPresentationModel.swift */; };
 		9A153F9B5C3C1FF56899A933 /* Pods_Free2Move.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C779D258803427C9F93941 /* Pods_Free2Move.framework */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +87,7 @@
 		5FA4AC1521E8D06E00380562 /* Free2MoveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Free2MoveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FA4AC1B21E8D06E00380562 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FF06C5821F20132006DD840 /* UIView+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Helper.swift"; sourceTree = "<group>"; };
+		5FF06C5E21F20C90006DD840 /* VehicleViewPresentationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleViewPresentationModel.swift; sourceTree = "<group>"; };
 		881EB15AC54470C163F4344A /* Pods-Free2Move.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Free2Move.release.xcconfig"; path = "Pods/Target Support Files/Pods-Free2Move/Pods-Free2Move.release.xcconfig"; sourceTree = "<group>"; };
 		B0BA2957036D6F86DABD36E3 /* Pods-Free2Move.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Free2Move.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Free2Move/Pods-Free2Move.debug.xcconfig"; sourceTree = "<group>"; };
 		CF14AA069CEA6E33CB483AF0 /* Pods-Free2MoveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Free2MoveTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Free2MoveTests/Pods-Free2MoveTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -218,10 +220,9 @@
 		5F0588D821EE6040004D15DD /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				5FF06C5D21F20C78006DD840 /* PresentationModels */,
 				5F6777EC21EE7B0B00CA4274 /* VehicleInfoCell */,
 				5F6777EB21EE7B0100CA4274 /* VehicleView */,
-				5F6777E721EE784300CA4274 /* VehicleView.swift */,
-				5F6777E921EE785000CA4274 /* VehicleView.xib */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -229,6 +230,8 @@
 		5F6777EB21EE7B0100CA4274 /* VehicleView */ = {
 			isa = PBXGroup;
 			children = (
+				5F6777E721EE784300CA4274 /* VehicleView.swift */,
+				5F6777E921EE785000CA4274 /* VehicleView.xib */,
 			);
 			path = VehicleView;
 			sourceTree = "<group>";
@@ -303,6 +306,14 @@
 				5FF06C5821F20132006DD840 /* UIView+Helper.swift */,
 			);
 			path = Categories;
+			sourceTree = "<group>";
+		};
+		5FF06C5D21F20C78006DD840 /* PresentationModels */ = {
+			isa = PBXGroup;
+			children = (
+				5FF06C5E21F20C90006DD840 /* VehicleViewPresentationModel.swift */,
+			);
+			path = PresentationModels;
 			sourceTree = "<group>";
 		};
 		9426F7071325FC7EA77FA27F /* Frameworks */ = {
@@ -524,6 +535,7 @@
 				5F05886221EA2D6D004D15DD /* VehicleModel+Position.swift in Sources */,
 				5F6777EF21EE7B4B00CA4274 /* VehicleInfoCell.swift in Sources */,
 				5F05888521EBEEFF004D15DD /* BusinessLayer.swift in Sources */,
+				5FF06C5F21F20C90006DD840 /* VehicleViewPresentationModel.swift in Sources */,
 				5F05886421EA4150004D15DD /* VehiclesModel.swift in Sources */,
 				5F05887A21EB2A16004D15DD /* ResponseParser.swift in Sources */,
 				5F05887E21EBBDA2004D15DD /* APIError.swift in Sources */,
