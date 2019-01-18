@@ -8,6 +8,7 @@ target 'Free2Move' do
   pod 'SwiftyJSON'
   pod 'MBProgressHUD'
   pod 'SnapKit'
+  pod 'SDWebImage'
 end
 
 target 'Free2MoveTests' do

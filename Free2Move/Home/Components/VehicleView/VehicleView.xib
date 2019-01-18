@@ -74,6 +74,7 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
+                <outlet property="carImageView" destination="ruD-jc-4Am" id="sH5-E3-a0n"/>
                 <outlet property="collectionView" destination="D3g-2g-Qko" id="JPf-Ez-1mL"/>
                 <outlet property="heightConstraintaForCollectionView" destination="iqw-rz-PY9" id="tPM-AS-nuY"/>
                 <outlet property="identificationNumber" destination="GyT-e8-sy2" id="5tM-jR-Edf"/>
