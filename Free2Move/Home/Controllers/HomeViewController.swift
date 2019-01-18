@@ -21,6 +21,11 @@ class HomeViewController: UIViewController, RootViewProtocol {
         getVehicles()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        rootView.addDetailView(view: VehicleView.fromNib())
+    }
+    
     func getVehicles() {
         businessLayer.getVehicles(success: {[weak self] (vehicles) in
             guard let `self` = self else { return }

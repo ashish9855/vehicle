@@ -35,6 +35,7 @@
 		5FA4AC0A21E8D06D00380562 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FA4AC0821E8D06D00380562 /* Main.storyboard */; };
 		5FA4AC0C21E8D06E00380562 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FA4AC0B21E8D06E00380562 /* Assets.xcassets */; };
 		5FA4AC0F21E8D06E00380562 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FA4AC0D21E8D06E00380562 /* LaunchScreen.storyboard */; };
+		5FF06C5921F20132006DD840 /* UIView+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF06C5821F20132006DD840 /* UIView+Helper.swift */; };
 		9A153F9B5C3C1FF56899A933 /* Pods_Free2Move.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C779D258803427C9F93941 /* Pods_Free2Move.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +85,7 @@
 		5FA4AC1021E8D06E00380562 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5FA4AC1521E8D06E00380562 /* Free2MoveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Free2MoveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FA4AC1B21E8D06E00380562 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FF06C5821F20132006DD840 /* UIView+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Helper.swift"; sourceTree = "<group>"; };
 		881EB15AC54470C163F4344A /* Pods-Free2Move.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Free2Move.release.xcconfig"; path = "Pods/Target Support Files/Pods-Free2Move/Pods-Free2Move.release.xcconfig"; sourceTree = "<group>"; };
 		B0BA2957036D6F86DABD36E3 /* Pods-Free2Move.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Free2Move.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Free2Move/Pods-Free2Move.debug.xcconfig"; sourceTree = "<group>"; };
 		CF14AA069CEA6E33CB483AF0 /* Pods-Free2MoveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Free2MoveTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Free2MoveTests/Pods-Free2MoveTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 		5F05887021EA6E02004D15DD /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				5FF06C5721F2011F006DD840 /* Categories */,
 				5F0588D321EE55A6004D15DD /* Protocols */,
 				5F05887621EB24F7004D15DD /* NetworkLayer */,
 				5F05887121EA6E09004D15DD /* Helpers */,
@@ -292,6 +295,14 @@
 				5FA4AC1B21E8D06E00380562 /* Info.plist */,
 			);
 			path = Free2MoveTests;
+			sourceTree = "<group>";
+		};
+		5FF06C5721F2011F006DD840 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				5FF06C5821F20132006DD840 /* UIView+Helper.swift */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 		9426F7071325FC7EA77FA27F /* Frameworks */ = {
@@ -499,6 +510,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F0588D721EE567B004D15DD /* HomeViewControllerRootView.swift in Sources */,
+				5FF06C5921F20132006DD840 /* UIView+Helper.swift in Sources */,
 				5F6777E821EE784300CA4274 /* VehicleView.swift in Sources */,
 				5FA4AC0721E8D06D00380562 /* HomeViewController.swift in Sources */,
 				5F05885E21EA271F004D15DD /* VehicleModel.swift in Sources */,

@@ -64,6 +64,11 @@
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="D3g-2g-Qko" secondAttribute="trailing" constant="10" id="yGf-re-rc3"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="collectionView" destination="D3g-2g-Qko" id="JPf-Ez-1mL"/>
+                <outlet property="identificationNumber" destination="GyT-e8-sy2" id="5tM-jR-Edf"/>
+                <outlet property="modelName" destination="peR-BG-C9U" id="eQr-gR-gXl"/>
+            </connections>
             <point key="canvasLocation" x="138.40000000000001" y="153.37331334332833"/>
         </view>
     </objects>

@@ -10,9 +10,13 @@ import UIKit
 
 class VehicleInfoCell: UICollectionViewCell {
 
+    @IBOutlet weak var title: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
-
+    
+    func set(_ title: String) {
+        self.title.text = title
+    }
 }

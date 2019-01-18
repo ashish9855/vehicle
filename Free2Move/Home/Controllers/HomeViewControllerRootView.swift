@@ -13,11 +13,17 @@ import MapKit
 class HomeViewControllerRootView: UIView {
     
     @IBOutlet weak var mapView: MKMapView!
-    
+    @IBOutlet weak var detailView: UIView!
+
     var mapLoadedOnce: Bool = false
     var vehicles: [Vehicle] = []
     var annotations:[MKPointAnnotation] = []
 
+    func addDetailView(view: UIView) {
+        detailView.addSubview(view)
+        
+    }
+    
     func handle(oldVehicles: [Vehicle], newVehicles: [Vehicle], oldAnotations:[MKPointAnnotation]) -> (vehicles: [Vehicle], anotations: [MKPointAnnotation]) {
         
         // if we dont have vehicles already
