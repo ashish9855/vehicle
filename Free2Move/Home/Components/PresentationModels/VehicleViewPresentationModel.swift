@@ -16,12 +16,14 @@ struct VehicleViewPresentationModel {
     }
     
     let vehicle: Vehicle
-    
     var count: Int {
         return formData().count
     }
+    var items: [Item] {
+        return formData()
+    }
     
-    func formData() -> [Item] {
+    private func formData() -> [Item] {
         var items: [Item?] = []
         items.append(isAutomatic())
         items.append(color())
@@ -30,28 +32,28 @@ struct VehicleViewPresentationModel {
         return items.compactMap({ $0 })
     }
     
-    func isAutomatic() -> Item? {
+    private func isAutomatic() -> Item? {
         if vehicle.automatic {
             return Item(key: "Transmission: ", value: "automatic")
         }
         return nil
     }
     
-    func color() -> Item? {
+    private func color() -> Item? {
         if !vehicle.color.isEmpty {
             return Item(key: "Color: ", value: vehicle.color)
         }
         return nil
     }
     
-    func engineType() -> Item? {
+    private func engineType() -> Item? {
         if vehicle.engineType != .generic {
            return Item(key: "Engine: ", value: vehicle.engineType.rawValue)
         }
         return nil
     }
     
-    func fuelState() -> Item? {
+    private func fuelState() -> Item? {
         if vehicle.fuelState != 0 {
             return Item(key: "Fuel: ", value: String(vehicle.fuelState) + "%")
         }

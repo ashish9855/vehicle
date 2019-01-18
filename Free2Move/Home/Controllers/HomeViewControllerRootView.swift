@@ -14,15 +14,25 @@ import SnapKit
 class HomeViewControllerRootView: UIView {
     
     @IBOutlet weak var mapView: MKMapView!
-    @IBOutlet weak var detailView: UIView!
+    @IBOutlet weak var vehicleDetailContainerView: UIView!
 
+    let vehicleDetailView: VehicleView = VehicleView.fromNib()
     var mapLoadedOnce: Bool = false
     var vehicles: [Vehicle] = []
     var annotations:[MKPointAnnotation] = []
 
-    func addDetailView(view: UIView) {
-        detailView.addSubview(view)
-        view.snp.makeConstraints { $0.edges.equalTo(0) }
+    func hideDetailView() {
+        vehicleDetailContainerView.isHidden = true
+    }
+    
+    func showDetailView(for vehicle: Vehicle) {
+        vehicleDetailView.setup(presentationModel: VehicleViewPresentationModel(vehicle: vehicle))
+        vehicleDetailContainerView.isHidden = false
+    }
+    
+    func addDetailViewToContainer() {
+        vehicleDetailContainerView.addSubview(vehicleDetailView)
+        vehicleDetailView.snp.makeConstraints { $0.edges.equalTo(0) }
     }
     
     func handle(oldVehicles: [Vehicle], newVehicles: [Vehicle], oldAnotations:[MKPointAnnotation]) -> (vehicles: [Vehicle], anotations: [MKPointAnnotation]) {
@@ -149,5 +159,9 @@ class HomeViewControllerRootView: UIView {
         }
         
         mapView.setVisibleMapRect(zoomRect, animated: true)
+    }
+    
+    func getVehicle(from vehicles: [Vehicle], with id: String) -> Vehicle? {
+        return vehicles.first(where: {$0.vin == id })
     }
 }

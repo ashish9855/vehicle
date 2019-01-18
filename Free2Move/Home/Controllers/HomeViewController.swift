@@ -23,7 +23,7 @@ class HomeViewController: UIViewController, RootViewProtocol {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        rootView.addDetailView(view: VehicleView.fromNib())
+        rootView.addDetailViewToContainer()
     }
     
     func getVehicles() {
@@ -65,12 +65,18 @@ extension HomeViewController: MKMapViewDelegate {
         pinView = mapView.dequeueReusableAnnotationView(withIdentifier: defaultPinID) as? MKPinAnnotationView
         if pinView == nil {
             pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: defaultPinID)
-            pinView!.canShowCallout = true
         }
         else {
             pinView!.annotation = annotation
         }
         return pinView
+    }
+    
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        let selectedAnotation = view.annotation as? MKPointAnnotation
+        guard let id = selectedAnotation?.title else { return }
+        guard let vehicle = rootView.getVehicle(from: rootView.vehicles, with: id) else { return }
+        rootView.showDetailView(for: vehicle)
     }
 }
 

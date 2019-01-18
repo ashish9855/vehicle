@@ -35,7 +35,7 @@
                         <constraint firstAttribute="height" constant="1" id="Ea7-D9-pNN"/>
                     </constraints>
                 </view>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="D3g-2g-Qko">
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="D3g-2g-Qko">
                     <rect key="frame" x="10" y="108" width="355" height="549"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
@@ -48,15 +48,24 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ruD-jc-4Am">
+                    <rect key="frame" x="289" y="22" width="70" height="70"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="YgR-Yx-erX"/>
+                        <constraint firstAttribute="height" constant="70" id="g4h-Kh-7IL"/>
+                    </constraints>
+                </imageView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="ruD-jc-4Am" secondAttribute="trailing" constant="16" id="55C-9E-BiU"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="D3g-2g-Qko" secondAttribute="bottom" constant="10" id="5zo-Jw-PRi"/>
                 <constraint firstItem="peR-BG-C9U" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="77a-4K-iVm"/>
                 <constraint firstItem="GyT-e8-sy2" firstAttribute="leading" secondItem="peR-BG-C9U" secondAttribute="leading" id="GIk-Cp-hMX"/>
                 <constraint firstItem="D3g-2g-Qko" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="HCs-Uj-QnU"/>
                 <constraint firstItem="y1K-cQ-03G" firstAttribute="top" secondItem="GyT-e8-sy2" secondAttribute="bottom" constant="10" id="KXF-a4-JvO"/>
                 <constraint firstItem="D3g-2g-Qko" firstAttribute="top" secondItem="y1K-cQ-03G" secondAttribute="bottom" constant="10" id="Mj8-WE-4B6"/>
+                <constraint firstItem="ruD-jc-4Am" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="22" id="eNr-rt-Ses"/>
                 <constraint firstItem="peR-BG-C9U" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="eWZ-ba-lqm"/>
                 <constraint firstItem="y1K-cQ-03G" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="efd-BI-iVH"/>
                 <constraint firstItem="GyT-e8-sy2" firstAttribute="top" secondItem="peR-BG-C9U" secondAttribute="bottom" constant="5" id="iFX-0J-UAm"/>
