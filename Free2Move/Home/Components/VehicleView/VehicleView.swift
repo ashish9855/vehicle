@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class VehicleView: UIView {
 
@@ -31,6 +32,7 @@ class VehicleView: UIView {
     private func handleView() {
         self.modelName.text = presentationModel.vehicle.model
         self.identificationNumber.text = presentationModel.vehicle.vin
+        self.carImageView.sd_setImage(with: URL(string: presentationModel.vehicle.imageUrl), placeholderImage: nil)
         heightConstraintaForCollectionView.constant = CGFloat(presentationModel.count * Int(cellHeight))
         self.collectionView.reloadData()
     }

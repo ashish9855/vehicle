@@ -28,6 +28,7 @@ struct Vehicle {
     let engineType: EngineType
     let automatic: Bool
     let color: String
+    let imageUrl: String
     let position: Position
     
     init(_ json: JSON) {
@@ -40,6 +41,7 @@ struct Vehicle {
         engineType = EngineType(rawValue: json["engine_type"].stringValue) ?? .generic
         automatic = json["automatic"].boolValue
         color = json["color"].stringValue
+        imageUrl = json["image_url"].stringValue
         position = Position(json["position"])
     }
 }
